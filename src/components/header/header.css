@@ -20,6 +20,10 @@ body.is-preload *:after {
 }
 
 #header {
+    display: flex;
+}
+
+#navbar {
     width: fit-content;
     margin: auto;
 }
