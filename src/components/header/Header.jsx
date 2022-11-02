@@ -5,12 +5,12 @@ export default function Header() {
             <div id="navbar">
                 <div className="nav">
                     <p className='top'></p>
-                    <a href="#">Home</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Accomplishments</a>
-                    <a href="#">My Journey</a>
-                    <a href="#">Tech Stack</a>
-                    <a href="#">Documentation</a>
+                    <a href="/">Home</a>
+                    <a href="/projects">Projects</a>
+                    <a href="accomplishments">Accomplishments</a>
+                    <a href="myJourney">My Journey</a>
+                    <a href="techStack">Tech Stack</a>
+                    <a href="documentation">Documentation</a>
                     <p className='bottom'></p>
                 </div>
             </div>
