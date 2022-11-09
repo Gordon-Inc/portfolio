@@ -45,7 +45,7 @@ db.homePage.insertOne({
     }
 });
 
-db.projects.insert({
+db.projects.insertMany({
     typeOf: "Team",
     name: "Tech Port",
     img: "https://camo.githubusercontent.com/5a0b6cde1438105af2f5247ac001977d40c18ff0c0392012ab7b2d2eeae7fa44/68747470733a2f2f64377674653276396c346471642e636c6f756466726f6e742e6e65742f74656368706f72745f6c6f67696e706167652e6a7067",
@@ -95,7 +95,7 @@ db.projects.insert({
         likes: 0,
         comments: {}
     });
-db.accomplishments.insert({
+db.accomplishments.insertMany({
     type: "Certificate Course",
     status: "Complete",
     title: "Galvanize Fort Hood Web Development Immersive",
@@ -590,7 +590,7 @@ db.accomplishments.insert({
         ],
         description: "Welcome to the Capstone project! This project enables you to demonstrate multiple skills from this Certificate by solving an authentic real-world problem. This course will test your knowledge and understanding in mobile development using React Native. On completion of the Capstone project, you will have a job-ready portfolio that you can show to recruiters, demonstrate during interviews and impress potential employers."
     });
-db.myJourney.insert({
+db.myJourney.insertMany({
     year: 2009,
     event: "Enlisted in the United States Marine Corps",
     location: "San Diego, California",
@@ -737,7 +737,7 @@ db.myJourney.insert({
         jobTitle: "Software Engineer Immersive Resident",
         description: "Landed a job with Galvanize as a Software Engineer Immersive Resident. Instructed Software Development fundamentals to 60 transitioning service members to prepare them for a role as a Software Engineer in the technical community. Mentored students on a one-on-one basis to build on skills and understanding to help them in their future growth as Full Stack Software Engineers. Championed the new Onboarding module for the Learn Software that streamlines the onboarding of oncoming Software Engineer Immersive Residence personnel so they will be prepared to hit the ground running."
     });
-db.techStack.insert({
+db.techStack.insertMany({
     type: "Front-End",
     name: "HTML",
     StartDate: "2021-09-13",
