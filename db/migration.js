@@ -55,6 +55,9 @@ db.createCollection("projects", {
                 url: {
                     bsonType: "string",
                 },
+                gitHub: {
+                    bsonType: "string",
+                },
                 description: {
                     bsonType: "string",
                 },
@@ -64,7 +67,7 @@ db.createCollection("projects", {
                 },
                 comments: {
                     bsonType: "object",
-                    description: "key will be name, value will be comment"
+                    description: "object will have a name, comment, likes"
                 }
             }
         }
@@ -141,6 +144,10 @@ db.createCollection("techStack", {
                 },
                 startDate: {
                     bsonType: "string",
+                    description: "Should be a date string (YYYY-MM-DD)"
+                },
+                logo: {
+                    bsonType: "string"
                 }
             }
         }
