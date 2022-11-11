@@ -3,7 +3,7 @@ import Footer from "./components/footer/Footer"
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import './App.css'
-import Home from "./components/main/Home"
+import Home from "./components/main/home"
 
 function App() {
   return (
