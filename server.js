@@ -27,7 +27,7 @@ db.once('open', () => console.log('Connected to Database'))
 const PORT = process.env.PORT || 4000;
 
 // Middleware
-app.use(express.static('build'));
+app.use(express.static('public'));
 app.use(express.json());
 app.use(cors());
 
@@ -39,4 +39,4 @@ app.use('/myJourney', myJourneyRouter)
 app.use('/projects', projectsRouter)
 app.use('/techStack', techStackRouter)
 
-app.listen(PORT, () => console.log('Server Started'))
+app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
