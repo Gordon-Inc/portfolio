@@ -2,7 +2,8 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer"
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/main/home"
+import './App.css'
+import Home from "./components/main/Home"
 
 function App() {
   return (
