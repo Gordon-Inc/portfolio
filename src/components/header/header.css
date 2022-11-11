@@ -1,0 +1,117 @@
+@-ms-viewport {
+    width: device-width;
+}
+
+body.is-preload *,
+body.is-preload *:before,
+body.is-preload *:after {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
+#header {
+    display: flex;
+}
+
+#navbar {
+    width: fit-content;
+    margin: auto;
+}
+
+.nav {
+    justify-content: center;
+    margin-top: 4rem;
+    border-top: none;
+    border-bottom: none;
+    width: fit-content;
+    padding: 10px 0px;
+    color: inherit;
+    display: inline-block;
+}
+
+.top {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    animation: active 5s forwards;
+    animation-iteration-count: 1;
+    height: 4px;
+}
+
+@keyframes active {
+    from {
+        content: '';
+        display: block;
+        width: 0;
+        background: #000;
+        transition: width .5s;
+    }
+
+    to {
+        width: 100%;
+        background: #000;
+    }
+}
+
+.bottom {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    animation: active 5s forwards;
+    animation-iteration-count: 1;
+    height: 3px;
+}
+
+a {
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large;
+    color: inherit;
+    animation: change 10s forwards;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@keyframes change {
+    from {
+        opacity: 0%;
+        transition: opacity .5s;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+
+    a {
+        font-size: 13pt;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+    a {
+        font-size: 12pt;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    a {
+        font-size: 11pt;
+        letter-spacing: 0.0375em;
+    }
+
+}
