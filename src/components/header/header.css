@@ -17,6 +17,9 @@ body.is-preload *:after {
 
 #header {
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #navbar {
