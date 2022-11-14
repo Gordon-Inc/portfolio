@@ -1,0 +1,59 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 99vh;
+    position: relative;
+    color: #010;
+    padding-top: 102px;
+}
+
+.home>h1 {
+    align-self: center;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    animation: change 10s forwards;
+}
+
+.home>h2 {
+    align-self: center;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    animation: change 10s forwards;
+}
+
+.learn-more {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: absolute;
+    bottom: 0px;
+    cursor: pointer;
+    animation: change 10s forwards;
+}
+
+.learn-more>p {
+    font-size: xx-large;
+    pointer-events: none;
+}
+
+#down {
+    align-self: center;
+    height: 4rem;
+    width: 4rem;
+}
+
+@keyframes change {
+    from {
+        opacity: 0%;
+        transition: opacity .5s;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
