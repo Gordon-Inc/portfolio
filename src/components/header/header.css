@@ -43,7 +43,7 @@ body.is-preload *:after {
     margin-bottom: 10px;
     animation: active 5s forwards;
     animation-iteration-count: 1;
-    height: 4px;
+    height: 3px;
 }
 
 @keyframes active {
