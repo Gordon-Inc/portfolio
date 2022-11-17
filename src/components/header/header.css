@@ -17,9 +17,11 @@ body.is-preload *:after {
 
 #header {
     display: flex;
-    position: fixed;
     top: 0;
+    position: fixed;
     width: 100%;
+    font-family: inherit;
+    z-index: 1;
 }
 
 #navbar {
@@ -30,11 +32,11 @@ body.is-preload *:after {
 .nav {
     justify-content: center;
     margin-top: 4rem;
+    margin-bottom: 4rem;
     border-top: none;
     border-bottom: none;
     width: fit-content;
     padding: 10px 0px;
-    color: inherit;
     display: inline-block;
 }
 
@@ -43,7 +45,8 @@ body.is-preload *:after {
     margin-bottom: 10px;
     animation: active 5s forwards;
     animation-iteration-count: 1;
-    height: 3px;
+    animation-delay: 4s;
+    height: .25em;
 }
 
 @keyframes active {
@@ -51,13 +54,13 @@ body.is-preload *:after {
         content: '';
         display: block;
         width: 0;
-        background: #000;
+        background: #010;
         transition: width .5s;
     }
 
     to {
         width: 100%;
-        background: #000;
+        background: #010;
     }
 }
 
@@ -66,21 +69,24 @@ body.is-preload *:after {
     margin-bottom: 10px;
     animation: active 5s forwards;
     animation-iteration-count: 1;
-    height: 3px;
+    animation-delay: 4s;
+    height: .25em;
 }
 
 a {
     margin: 10px;
     text-align: center;
     text-decoration: none;
-    font-size: x-large;
     color: inherit;
     animation: change 10s forwards;
-
+    animation-delay: 4s;
+    opacity: 0;
+    font-weight: bold;
+    font-size: x-large;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline 2px;
 }
 
 @keyframes change {

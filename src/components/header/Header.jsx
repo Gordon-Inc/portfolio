@@ -8,10 +8,10 @@ export default function Header() {
                     <p className='top'></p>
                     <a href="/">Home</a>
                     <a href="/projects">Projects</a>
-                    <a href="accomplishments">Accomplishments</a>
-                    <a href="myJourney">My Journey</a>
-                    <a href="techStack">Tech Stack</a>
-                    <a href="documentation">Documentation</a>
+                    <a href="/accomplishments">Accomplishments</a>
+                    <a href="/myJourney">My Journey</a>
+                    <a href="/techStack">Tech Stack</a>
+                    <a href="/documentation">Documentation</a>
                     <p className='bottom'></p>
                 </div>
             </div>
