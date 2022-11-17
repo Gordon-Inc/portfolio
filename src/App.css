@@ -5,12 +5,13 @@
 }
 
 body {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.0)), url("https://user-images.githubusercontent.com/96712943/201222281-2b05bb24-45ff-4854-9020-caf7db936156.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.0)), url("https://user-images.githubusercontent.com/96712943/201222281-2b05bb24-45ff-4854-9020-caf7db936156.jpg");
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .App {
@@ -19,53 +20,54 @@ body {
     background-attachment: fixed;
     height: 100vh;
     opacity: 1;
-    animation: start 4s 1 forwards;
+    animation: start 5s 1 forwards;
+    animation-timing-function: linear;
 }
 
 @keyframes start {
 
     0% {
-        background-color: rgba(255, 255, 255, 1.0)
+        background-color: rgba(0, 0, 0, 1.0)
     }
 
     10% {
-        background-color: rgba(255, 255, 255, 0.9)
+        background-color: rgba(0, 0, 0, 0.9)
     }
 
     20% {
-        background-color: rgba(255, 255, 255, 0.8)
+        background-color: rgba(0, 0, 0, 0.8)
     }
 
     30% {
-        background-color: rgba(255, 255, 255, 0.7)
+        background-color: rgba(0, 0, 0, 0.7)
     }
 
     40% {
-        background-color: rgba(255, 255, 255, 0.6)
+        background-color: rgba(0, 0, 0, 0.6)
     }
 
     50% {
-        background-color: rgba(255, 255, 255, 0.5)
+        background-color: rgba(0, 0, 0, 0.5)
     }
 
     60% {
-        background-color: rgba(255, 255, 255, 0.4)
+        background-color: rgba(0, 0, 0, 0.4)
     }
 
     70% {
-        background-color: rgba(255, 255, 255, 0.3)
+        background-color: rgba(0, 0, 0, 0.3)
     }
 
     80% {
-        background-color: rgba(255, 255, 255, 0.2)
+        background-color: rgba(0, 0, 0, 0.2)
     }
 
     90% {
-        background-color: rgba(255, 255, 255, 0.1)
+        background-color: rgba(0, 0, 0, 0.1)
     }
 
     100% {
-        background-color: rgba(255, 255, 255, 0.0)
+        background-color: rgba(0, 0, 0, 0.0)
     }
 }
 
