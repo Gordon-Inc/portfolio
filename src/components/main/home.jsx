@@ -38,6 +38,8 @@ function Home() {
                 <p>LEARN MORE...</p>
                 <img src="https://user-images.githubusercontent.com/96712943/201760967-f0f8bef8-b55e-4d0f-b94a-816f16497cac.png" alt="down-arrow" id="down"></img>
             </div>
+
+
         </div>
     )
 }

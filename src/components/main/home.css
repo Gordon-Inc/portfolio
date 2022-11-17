@@ -4,8 +4,6 @@
     flex-wrap: wrap;
     height: 99vh;
     position: relative;
-    color: #010;
-    padding-top: 102px;
 }
 
 .home>h1 {
@@ -14,7 +12,11 @@
     top: 30%;
     transform: translateY(-50%);
     font-size: 4rem;
-    animation: change 10s forwards;
+    animation: change 9s forwards;
+    animation-delay: 4s;
+    pointer-events: none;
+    opacity: 0;
+    font-family: inherit;
 }
 
 .home>h2 {
@@ -23,7 +25,11 @@
     top: 40%;
     transform: translateY(-50%);
     font-size: 2rem;
-    animation: change 10s forwards;
+    animation: change 9s forwards;
+    animation-delay: 4s;
+    pointer-events: none;
+    opacity: 0;
+    font-family: inherit;
 }
 
 .learn-more {
@@ -31,9 +37,16 @@
     flex-direction: column;
     align-self: center;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     cursor: pointer;
-    animation: change 10s forwards;
+    opacity: 0;
+    animation: appear 1s forwards;
+    animation-delay: 9s;
+    font-family: inherit;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
 }
 
 .learn-more>p {
@@ -55,5 +68,15 @@
 
     to {
         opacity: 100%;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
